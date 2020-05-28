@@ -48,7 +48,7 @@ namespace TheExpedition2
 
         public void Move(Direction direction)
         {
-            base.location = base.Move(direction, game.Boundaries);
+            base.location = Move(direction, game.Boundaries);
             if (!game.WeaponInRoom.PickedUp)
                 if (Nearby(game.WeaponInRoom.Location, 1))
                 {

@@ -13,7 +13,8 @@ namespace TheExpedition2
         public ICollection<Enemy> Enemies { get; private set; }
         public Weapon WeaponInRoom { get; private set; }
         private Player player;
-        public Point PlayerHitPoints { get { return player.HitPoints; } }
+        public Point PlayerLocation { get { return player.Location; } }
+        public int PlayerHitPoints { get { return player.HitPoints; } }
         public IEnumerable<string> PlayerWeapons { get { return player.Weapons; } }
         private int level = 0;
         public int Level { get { return level; } }
