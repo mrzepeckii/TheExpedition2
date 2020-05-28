@@ -28,425 +28,425 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.picturePlayer = new System.Windows.Forms.PictureBox();
+            this.pictureBat = new System.Windows.Forms.PictureBox();
+            this.pictureGhost = new System.Windows.Forms.PictureBox();
+            this.pictureGhul = new System.Windows.Forms.PictureBox();
+            this.pictureBluePot = new System.Windows.Forms.PictureBox();
+            this.pictureRedPot = new System.Windows.Forms.PictureBox();
+            this.pictureSword = new System.Windows.Forms.PictureBox();
+            this.pictureBow = new System.Windows.Forms.PictureBox();
+            this.pictureMace = new System.Windows.Forms.PictureBox();
+            this.pictureEqupSword = new System.Windows.Forms.PictureBox();
+            this.pictureEqupBow = new System.Windows.Forms.PictureBox();
+            this.pictureEqupMace = new System.Windows.Forms.PictureBox();
+            this.pictureExupBP = new System.Windows.Forms.PictureBox();
+            this.pictureExupRP = new System.Windows.Forms.PictureBox();
+            this.tableStatistic = new System.Windows.Forms.TableLayoutPanel();
+            this.ghoulHitPoints = new System.Windows.Forms.Label();
+            this.labelGhul = new System.Windows.Forms.Label();
+            this.ghostHitPoints = new System.Windows.Forms.Label();
+            this.labelGhost = new System.Windows.Forms.Label();
+            this.batHitPoints = new System.Windows.Forms.Label();
+            this.labelBat = new System.Windows.Forms.Label();
+            this.playerHitPoints = new System.Windows.Forms.Label();
+            this.labelPlayer = new System.Windows.Forms.Label();
+            this.buttonUp = new System.Windows.Forms.Button();
+            this.tableMove = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonDown = new System.Windows.Forms.Button();
+            this.buttonLeft = new System.Windows.Forms.Button();
+            this.buttonRight = new System.Windows.Forms.Button();
+            this.labelMove = new System.Windows.Forms.Label();
+            this.tableAttack = new System.Windows.Forms.TableLayoutPanel();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.labelAttack = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGhost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGhul)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBluePot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRedPot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupBow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupMace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExupBP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExupRP)).BeginInit();
+            this.tableStatistic.SuspendLayout();
+            this.tableMove.SuspendLayout();
+            this.tableAttack.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picturePlayer
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::TheExpedition2.Properties.Resources.player;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.picturePlayer.BackColor = System.Drawing.Color.Transparent;
+            this.picturePlayer.BackgroundImage = global::TheExpedition2.Properties.Resources.player;
+            this.picturePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picturePlayer.Location = new System.Drawing.Point(94, 64);
+            this.picturePlayer.Name = "picturePlayer";
+            this.picturePlayer.Size = new System.Drawing.Size(39, 38);
+            this.picturePlayer.TabIndex = 0;
+            this.picturePlayer.TabStop = false;
+            this.picturePlayer.Visible = false;
             // 
-            // pictureBox2
+            // pictureBat
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::TheExpedition2.Properties.Resources.bat;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(139, 64);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.pictureBat.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBat.BackgroundImage = global::TheExpedition2.Properties.Resources.bat;
+            this.pictureBat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBat.Location = new System.Drawing.Point(139, 64);
+            this.pictureBat.Name = "pictureBat";
+            this.pictureBat.Size = new System.Drawing.Size(39, 38);
+            this.pictureBat.TabIndex = 1;
+            this.pictureBat.TabStop = false;
+            this.pictureBat.Visible = false;
             // 
-            // pictureBox3
+            // pictureGhost
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::TheExpedition2.Properties.Resources.ghost;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(184, 64);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
+            this.pictureGhost.BackColor = System.Drawing.Color.Transparent;
+            this.pictureGhost.BackgroundImage = global::TheExpedition2.Properties.Resources.ghost;
+            this.pictureGhost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureGhost.Location = new System.Drawing.Point(184, 64);
+            this.pictureGhost.Name = "pictureGhost";
+            this.pictureGhost.Size = new System.Drawing.Size(39, 38);
+            this.pictureGhost.TabIndex = 2;
+            this.pictureGhost.TabStop = false;
+            this.pictureGhost.Visible = false;
             // 
-            // pictureBox4
+            // pictureGhul
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::TheExpedition2.Properties.Resources.ghoul;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(229, 64);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Visible = false;
+            this.pictureGhul.BackColor = System.Drawing.Color.Transparent;
+            this.pictureGhul.BackgroundImage = global::TheExpedition2.Properties.Resources.ghoul;
+            this.pictureGhul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureGhul.Location = new System.Drawing.Point(229, 64);
+            this.pictureGhul.Name = "pictureGhul";
+            this.pictureGhul.Size = new System.Drawing.Size(39, 38);
+            this.pictureGhul.TabIndex = 3;
+            this.pictureGhul.TabStop = false;
+            this.pictureGhul.Visible = false;
             // 
-            // pictureBox5
+            // pictureBluePot
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::TheExpedition2.Properties.Resources.potion_blue;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(274, 64);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
+            this.pictureBluePot.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBluePot.BackgroundImage = global::TheExpedition2.Properties.Resources.potion_blue;
+            this.pictureBluePot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBluePot.Location = new System.Drawing.Point(274, 64);
+            this.pictureBluePot.Name = "pictureBluePot";
+            this.pictureBluePot.Size = new System.Drawing.Size(39, 38);
+            this.pictureBluePot.TabIndex = 4;
+            this.pictureBluePot.TabStop = false;
+            this.pictureBluePot.Visible = false;
             // 
-            // pictureBox6
+            // pictureRedPot
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::TheExpedition2.Properties.Resources.potion_red;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(319, 64);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
+            this.pictureRedPot.BackColor = System.Drawing.Color.Transparent;
+            this.pictureRedPot.BackgroundImage = global::TheExpedition2.Properties.Resources.potion_red;
+            this.pictureRedPot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureRedPot.Location = new System.Drawing.Point(319, 64);
+            this.pictureRedPot.Name = "pictureRedPot";
+            this.pictureRedPot.Size = new System.Drawing.Size(39, 38);
+            this.pictureRedPot.TabIndex = 5;
+            this.pictureRedPot.TabStop = false;
+            this.pictureRedPot.Visible = false;
             // 
-            // pictureBox7
+            // pictureSword
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = global::TheExpedition2.Properties.Resources.sword;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(364, 64);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
+            this.pictureSword.BackColor = System.Drawing.Color.Transparent;
+            this.pictureSword.BackgroundImage = global::TheExpedition2.Properties.Resources.sword;
+            this.pictureSword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureSword.Location = new System.Drawing.Point(364, 64);
+            this.pictureSword.Name = "pictureSword";
+            this.pictureSword.Size = new System.Drawing.Size(39, 38);
+            this.pictureSword.TabIndex = 6;
+            this.pictureSword.TabStop = false;
+            this.pictureSword.Visible = false;
             // 
-            // pictureBox8
+            // pictureBow
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = global::TheExpedition2.Properties.Resources.bow;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(409, 64);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
+            this.pictureBow.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBow.BackgroundImage = global::TheExpedition2.Properties.Resources.bow;
+            this.pictureBow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBow.Location = new System.Drawing.Point(409, 64);
+            this.pictureBow.Name = "pictureBow";
+            this.pictureBow.Size = new System.Drawing.Size(39, 38);
+            this.pictureBow.TabIndex = 7;
+            this.pictureBow.TabStop = false;
+            this.pictureBow.Visible = false;
             // 
-            // pictureBox9
+            // pictureMace
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImage = global::TheExpedition2.Properties.Resources.mace;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(454, 64);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
+            this.pictureMace.BackColor = System.Drawing.Color.Transparent;
+            this.pictureMace.BackgroundImage = global::TheExpedition2.Properties.Resources.mace;
+            this.pictureMace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureMace.Location = new System.Drawing.Point(454, 64);
+            this.pictureMace.Name = "pictureMace";
+            this.pictureMace.Size = new System.Drawing.Size(39, 38);
+            this.pictureMace.TabIndex = 8;
+            this.pictureMace.TabStop = false;
+            this.pictureMace.Visible = false;
             // 
-            // pictureBox10
+            // pictureEqupSword
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = global::TheExpedition2.Properties.Resources.sword;
-            this.pictureBox10.Location = new System.Drawing.Point(94, 373);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
+            this.pictureEqupSword.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEqupSword.Image = global::TheExpedition2.Properties.Resources.sword;
+            this.pictureEqupSword.Location = new System.Drawing.Point(94, 373);
+            this.pictureEqupSword.Name = "pictureEqupSword";
+            this.pictureEqupSword.Size = new System.Drawing.Size(50, 50);
+            this.pictureEqupSword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureEqupSword.TabIndex = 9;
+            this.pictureEqupSword.TabStop = false;
+            this.pictureEqupSword.Visible = false;
             // 
-            // pictureBox11
+            // pictureEqupBow
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = global::TheExpedition2.Properties.Resources.bow;
-            this.pictureBox11.Location = new System.Drawing.Point(150, 373);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Visible = false;
+            this.pictureEqupBow.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEqupBow.Image = global::TheExpedition2.Properties.Resources.bow;
+            this.pictureEqupBow.Location = new System.Drawing.Point(150, 373);
+            this.pictureEqupBow.Name = "pictureEqupBow";
+            this.pictureEqupBow.Size = new System.Drawing.Size(50, 50);
+            this.pictureEqupBow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureEqupBow.TabIndex = 10;
+            this.pictureEqupBow.TabStop = false;
+            this.pictureEqupBow.Visible = false;
             // 
-            // pictureBox12
+            // pictureEqupMace
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Image = global::TheExpedition2.Properties.Resources.mace;
-            this.pictureBox12.Location = new System.Drawing.Point(206, 373);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Visible = false;
+            this.pictureEqupMace.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEqupMace.Image = global::TheExpedition2.Properties.Resources.mace;
+            this.pictureEqupMace.Location = new System.Drawing.Point(206, 373);
+            this.pictureEqupMace.Name = "pictureEqupMace";
+            this.pictureEqupMace.Size = new System.Drawing.Size(50, 50);
+            this.pictureEqupMace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureEqupMace.TabIndex = 11;
+            this.pictureEqupMace.TabStop = false;
+            this.pictureEqupMace.Visible = false;
             // 
-            // pictureBox13
+            // pictureExupBP
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Image = global::TheExpedition2.Properties.Resources.potion_blue;
-            this.pictureBox13.Location = new System.Drawing.Point(263, 373);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Visible = false;
+            this.pictureExupBP.BackColor = System.Drawing.Color.Transparent;
+            this.pictureExupBP.Image = global::TheExpedition2.Properties.Resources.potion_blue;
+            this.pictureExupBP.Location = new System.Drawing.Point(263, 373);
+            this.pictureExupBP.Name = "pictureExupBP";
+            this.pictureExupBP.Size = new System.Drawing.Size(50, 50);
+            this.pictureExupBP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureExupBP.TabIndex = 12;
+            this.pictureExupBP.TabStop = false;
+            this.pictureExupBP.Visible = false;
             // 
-            // pictureBox14
+            // pictureExupRP
             // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Image = global::TheExpedition2.Properties.Resources.potion_red;
-            this.pictureBox14.Location = new System.Drawing.Point(319, 373);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 13;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Visible = false;
+            this.pictureExupRP.BackColor = System.Drawing.Color.Transparent;
+            this.pictureExupRP.Image = global::TheExpedition2.Properties.Resources.potion_red;
+            this.pictureExupRP.Location = new System.Drawing.Point(319, 373);
+            this.pictureExupRP.Name = "pictureExupRP";
+            this.pictureExupRP.Size = new System.Drawing.Size(50, 50);
+            this.pictureExupRP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureExupRP.TabIndex = 13;
+            this.pictureExupRP.TabStop = false;
+            this.pictureExupRP.Visible = false;
             // 
-            // tableLayoutPanel1
+            // tableStatistic
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59F));
-            this.tableLayoutPanel1.Controls.Add(this.label8, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(523, 252);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(181, 84);
-            this.tableLayoutPanel1.TabIndex = 14;
+            this.tableStatistic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableStatistic.BackColor = System.Drawing.Color.Transparent;
+            this.tableStatistic.ColumnCount = 2;
+            this.tableStatistic.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
+            this.tableStatistic.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59F));
+            this.tableStatistic.Controls.Add(this.ghoulHitPoints, 1, 3);
+            this.tableStatistic.Controls.Add(this.labelGhul, 0, 3);
+            this.tableStatistic.Controls.Add(this.ghostHitPoints, 1, 2);
+            this.tableStatistic.Controls.Add(this.labelGhost, 0, 2);
+            this.tableStatistic.Controls.Add(this.batHitPoints, 1, 1);
+            this.tableStatistic.Controls.Add(this.labelBat, 0, 1);
+            this.tableStatistic.Controls.Add(this.playerHitPoints, 1, 0);
+            this.tableStatistic.Controls.Add(this.labelPlayer, 0, 0);
+            this.tableStatistic.Location = new System.Drawing.Point(523, 252);
+            this.tableStatistic.Name = "tableStatistic";
+            this.tableStatistic.RowCount = 4;
+            this.tableStatistic.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableStatistic.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableStatistic.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableStatistic.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableStatistic.Size = new System.Drawing.Size(202, 84);
+            this.tableStatistic.TabIndex = 14;
             // 
-            // label8
+            // ghoulHitPoints
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(77, 64);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 16);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "ghoulHitPoints";
+            this.ghoulHitPoints.AutoSize = true;
+            this.ghoulHitPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ghoulHitPoints.Location = new System.Drawing.Point(85, 64);
+            this.ghoulHitPoints.Name = "ghoulHitPoints";
+            this.ghoulHitPoints.Size = new System.Drawing.Size(94, 16);
+            this.ghoulHitPoints.TabIndex = 7;
+            this.ghoulHitPoints.Text = "ghoulHitPoints";
             // 
-            // label7
+            // labelGhul
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(3, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Upior";
+            this.labelGhul.AutoSize = true;
+            this.labelGhul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGhul.Location = new System.Drawing.Point(3, 64);
+            this.labelGhul.Name = "labelGhul";
+            this.labelGhul.Size = new System.Drawing.Size(46, 16);
+            this.labelGhul.TabIndex = 6;
+            this.labelGhul.Text = "Upior";
             // 
-            // label6
+            // ghostHitPoints
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(77, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "ghostHitPoints";
+            this.ghostHitPoints.AutoSize = true;
+            this.ghostHitPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ghostHitPoints.Location = new System.Drawing.Point(85, 44);
+            this.ghostHitPoints.Name = "ghostHitPoints";
+            this.ghostHitPoints.Size = new System.Drawing.Size(94, 16);
+            this.ghostHitPoints.TabIndex = 5;
+            this.ghostHitPoints.Text = "ghostHitPoints";
             // 
-            // label5
+            // labelGhost
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(3, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Duch";
+            this.labelGhost.AutoSize = true;
+            this.labelGhost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGhost.Location = new System.Drawing.Point(3, 44);
+            this.labelGhost.Name = "labelGhost";
+            this.labelGhost.Size = new System.Drawing.Size(43, 16);
+            this.labelGhost.TabIndex = 4;
+            this.labelGhost.Text = "Duch";
             // 
-            // label4
+            // batHitPoints
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(77, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "batHitPoints";
+            this.batHitPoints.AutoSize = true;
+            this.batHitPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.batHitPoints.Location = new System.Drawing.Point(85, 22);
+            this.batHitPoints.Name = "batHitPoints";
+            this.batHitPoints.Size = new System.Drawing.Size(80, 16);
+            this.batHitPoints.TabIndex = 3;
+            this.batHitPoints.Text = "batHitPoints";
             // 
-            // label3
+            // labelBat
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(3, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nietoperz";
+            this.labelBat.AutoSize = true;
+            this.labelBat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelBat.Location = new System.Drawing.Point(3, 22);
+            this.labelBat.Name = "labelBat";
+            this.labelBat.Size = new System.Drawing.Size(75, 16);
+            this.labelBat.TabIndex = 2;
+            this.labelBat.Text = "Nietoperz";
             // 
-            // label2
+            // playerHitPoints
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(77, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "playerHitPoints";
+            this.playerHitPoints.AutoSize = true;
+            this.playerHitPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.playerHitPoints.Location = new System.Drawing.Point(85, 0);
+            this.playerHitPoints.Name = "playerHitPoints";
+            this.playerHitPoints.Size = new System.Drawing.Size(99, 16);
+            this.playerHitPoints.TabIndex = 1;
+            this.playerHitPoints.Text = "playerHitPoints";
             // 
-            // label1
+            // labelPlayer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Gracz";
+            this.labelPlayer.AutoSize = true;
+            this.labelPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPlayer.Location = new System.Drawing.Point(3, 0);
+            this.labelPlayer.Name = "labelPlayer";
+            this.labelPlayer.Size = new System.Drawing.Size(48, 16);
+            this.labelPlayer.TabIndex = 0;
+            this.labelPlayer.Text = "Gracz";
             // 
-            // button1
+            // buttonUp
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(44, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "↑";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonUp.Location = new System.Drawing.Point(44, 20);
+            this.buttonUp.Name = "buttonUp";
+            this.buttonUp.Size = new System.Drawing.Size(35, 28);
+            this.buttonUp.TabIndex = 0;
+            this.buttonUp.Text = "↑";
+            this.buttonUp.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel2
+            // tableMove
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button4, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(381, 353);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(124, 86);
-            this.tableLayoutPanel2.TabIndex = 17;
+            this.tableMove.BackColor = System.Drawing.Color.Transparent;
+            this.tableMove.ColumnCount = 3;
+            this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
+            this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableMove.Controls.Add(this.buttonDown, 1, 2);
+            this.tableMove.Controls.Add(this.buttonUp, 1, 1);
+            this.tableMove.Controls.Add(this.buttonLeft, 0, 2);
+            this.tableMove.Controls.Add(this.buttonRight, 2, 2);
+            this.tableMove.Controls.Add(this.labelMove, 0, 0);
+            this.tableMove.Location = new System.Drawing.Point(381, 353);
+            this.tableMove.Name = "tableMove";
+            this.tableMove.RowCount = 3;
+            this.tableMove.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableMove.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableMove.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableMove.Size = new System.Drawing.Size(124, 86);
+            this.tableMove.TabIndex = 17;
             // 
-            // button3
+            // buttonDown
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(44, 54);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "↓";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonDown.Location = new System.Drawing.Point(44, 54);
+            this.buttonDown.Name = "buttonDown";
+            this.buttonDown.Size = new System.Drawing.Size(35, 29);
+            this.buttonDown.TabIndex = 2;
+            this.buttonDown.Text = "↓";
+            this.buttonDown.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonLeft
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(3, 54);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "←";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonLeft.Location = new System.Drawing.Point(3, 54);
+            this.buttonLeft.Name = "buttonLeft";
+            this.buttonLeft.Size = new System.Drawing.Size(35, 29);
+            this.buttonLeft.TabIndex = 1;
+            this.buttonLeft.Text = "←";
+            this.buttonLeft.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonRight
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(85, 54);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 29);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "→";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonRight.Location = new System.Drawing.Point(85, 54);
+            this.buttonRight.Name = "buttonRight";
+            this.buttonRight.Size = new System.Drawing.Size(36, 29);
+            this.buttonRight.TabIndex = 3;
+            this.buttonRight.Text = "→";
+            this.buttonRight.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // labelMove
             // 
-            this.label9.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label9, 2);
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 16);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Move";
+            this.labelMove.AutoSize = true;
+            this.tableMove.SetColumnSpan(this.labelMove, 2);
+            this.labelMove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelMove.Location = new System.Drawing.Point(3, 0);
+            this.labelMove.Name = "labelMove";
+            this.labelMove.Size = new System.Drawing.Size(46, 16);
+            this.labelMove.TabIndex = 4;
+            this.labelMove.Text = "Move";
             // 
-            // tableLayoutPanel3
+            // tableAttack
             // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Controls.Add(this.button9, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button10, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button11, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button12, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(529, 353);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(124, 86);
-            this.tableLayoutPanel3.TabIndex = 18;
+            this.tableAttack.BackColor = System.Drawing.Color.Transparent;
+            this.tableAttack.ColumnCount = 3;
+            this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
+            this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableAttack.Controls.Add(this.button9, 1, 2);
+            this.tableAttack.Controls.Add(this.button10, 1, 1);
+            this.tableAttack.Controls.Add(this.button11, 0, 2);
+            this.tableAttack.Controls.Add(this.button12, 2, 2);
+            this.tableAttack.Controls.Add(this.labelAttack, 0, 0);
+            this.tableAttack.Location = new System.Drawing.Point(529, 353);
+            this.tableAttack.Name = "tableAttack";
+            this.tableAttack.RowCount = 3;
+            this.tableAttack.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableAttack.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableAttack.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableAttack.Size = new System.Drawing.Size(124, 86);
+            this.tableAttack.TabIndex = 18;
             // 
             // button9
             // 
@@ -488,16 +488,16 @@
             this.button12.Text = "→";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // labelAttack
             // 
-            this.label10.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.label10, 2);
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Attack";
+            this.labelAttack.AutoSize = true;
+            this.tableAttack.SetColumnSpan(this.labelAttack, 2);
+            this.labelAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelAttack.Location = new System.Drawing.Point(3, 0);
+            this.labelAttack.Name = "labelAttack";
+            this.labelAttack.Size = new System.Drawing.Size(51, 16);
+            this.labelAttack.TabIndex = 4;
+            this.labelAttack.Text = "Attack";
             // 
             // Form1
             // 
@@ -506,87 +506,87 @@
             this.BackgroundImage = global::TheExpedition2.Properties.Resources.dungeon600x400;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(760, 461);
-            this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.tableAttack);
+            this.Controls.Add(this.tableMove);
+            this.Controls.Add(this.picturePlayer);
+            this.Controls.Add(this.tableStatistic);
+            this.Controls.Add(this.pictureExupRP);
+            this.Controls.Add(this.pictureExupBP);
+            this.Controls.Add(this.pictureEqupMace);
+            this.Controls.Add(this.pictureEqupBow);
+            this.Controls.Add(this.pictureEqupSword);
+            this.Controls.Add(this.pictureRedPot);
+            this.Controls.Add(this.pictureBluePot);
+            this.Controls.Add(this.pictureGhul);
+            this.Controls.Add(this.pictureGhost);
+            this.Controls.Add(this.pictureBat);
+            this.Controls.Add(this.pictureMace);
+            this.Controls.Add(this.pictureBow);
+            this.Controls.Add(this.pictureSword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGhost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGhul)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBluePot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRedPot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupBow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEqupMace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExupBP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExupRP)).EndInit();
+            this.tableStatistic.ResumeLayout(false);
+            this.tableStatistic.PerformLayout();
+            this.tableMove.ResumeLayout(false);
+            this.tableMove.PerformLayout();
+            this.tableAttack.ResumeLayout(false);
+            this.tableAttack.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.PictureBox picturePlayer;
+        private System.Windows.Forms.PictureBox pictureBat;
+        private System.Windows.Forms.PictureBox pictureGhost;
+        private System.Windows.Forms.PictureBox pictureGhul;
+        private System.Windows.Forms.PictureBox pictureBluePot;
+        private System.Windows.Forms.PictureBox pictureRedPot;
+        private System.Windows.Forms.PictureBox pictureSword;
+        private System.Windows.Forms.PictureBox pictureBow;
+        private System.Windows.Forms.PictureBox pictureMace;
+        private System.Windows.Forms.PictureBox pictureEqupSword;
+        private System.Windows.Forms.PictureBox pictureEqupBow;
+        private System.Windows.Forms.PictureBox pictureEqupMace;
+        private System.Windows.Forms.PictureBox pictureExupBP;
+        private System.Windows.Forms.PictureBox pictureExupRP;
+        private System.Windows.Forms.TableLayoutPanel tableStatistic;
+        private System.Windows.Forms.Label ghoulHitPoints;
+        private System.Windows.Forms.Label labelGhul;
+        private System.Windows.Forms.Label ghostHitPoints;
+        private System.Windows.Forms.Label labelGhost;
+        private System.Windows.Forms.Label batHitPoints;
+        private System.Windows.Forms.Label labelBat;
+        private System.Windows.Forms.Label playerHitPoints;
+        private System.Windows.Forms.Label labelPlayer;
+        private System.Windows.Forms.Button buttonUp;
+        private System.Windows.Forms.TableLayoutPanel tableMove;
+        private System.Windows.Forms.Button buttonDown;
+        private System.Windows.Forms.Button buttonLeft;
+        private System.Windows.Forms.Button buttonRight;
+        private System.Windows.Forms.Label labelMove;
+        private System.Windows.Forms.TableLayoutPanel tableAttack;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelAttack;
     }
 }
 
