@@ -68,7 +68,7 @@ namespace TheExpedition2
                 equippedWeapon = null;
             }
             else
-                equippedWeapon.Attack();
+                equippedWeapon.Attack(direction, random);
                
         }
     }
