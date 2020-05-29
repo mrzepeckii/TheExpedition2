@@ -35,6 +35,7 @@ namespace TheExpedition2
                 enemy.Move(random);
         }
 
+
         public void Equip(string weaponName)
         {
             player.Equip(weaponName);
@@ -125,6 +126,8 @@ namespace TheExpedition2
                         WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     else if (!CheckPlayerInventory("RedPotion"))
                         WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
+                    break;
+                case 8:
                     break;
                 default:
                     Application.Exit();
