@@ -51,17 +51,17 @@
             this.labelBat = new System.Windows.Forms.Label();
             this.playerHitPoints = new System.Windows.Forms.Label();
             this.labelPlayer = new System.Windows.Forms.Label();
-            this.buttonUp = new System.Windows.Forms.Button();
+            this.buttonMoveUp = new System.Windows.Forms.Button();
             this.tableMove = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonDown = new System.Windows.Forms.Button();
-            this.buttonLeft = new System.Windows.Forms.Button();
-            this.buttonRight = new System.Windows.Forms.Button();
+            this.buttonMoveDown = new System.Windows.Forms.Button();
+            this.buttonMoveLeft = new System.Windows.Forms.Button();
+            this.buttonMoveRight = new System.Windows.Forms.Button();
             this.labelMove = new System.Windows.Forms.Label();
             this.tableAttack = new System.Windows.Forms.TableLayoutPanel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.buttonAttackDown = new System.Windows.Forms.Button();
+            this.buttonAttackUp = new System.Windows.Forms.Button();
+            this.buttonAttackLeft = new System.Windows.Forms.Button();
+            this.buttonAttackRight = new System.Windows.Forms.Button();
             this.labelAttack = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBat)).BeginInit();
@@ -92,7 +92,6 @@
             this.picturePlayer.Size = new System.Drawing.Size(39, 38);
             this.picturePlayer.TabIndex = 0;
             this.picturePlayer.TabStop = false;
-            this.picturePlayer.Visible = false;
             // 
             // pictureBat
             // 
@@ -201,6 +200,7 @@
             this.pictureEqupSword.TabIndex = 9;
             this.pictureEqupSword.TabStop = false;
             this.pictureEqupSword.Visible = false;
+            this.pictureEqupSword.Click += new System.EventHandler(this.pictureEqupSword_Click);
             // 
             // pictureEqupBow
             // 
@@ -213,6 +213,7 @@
             this.pictureEqupBow.TabIndex = 10;
             this.pictureEqupBow.TabStop = false;
             this.pictureEqupBow.Visible = false;
+            this.pictureEqupBow.Click += new System.EventHandler(this.pictureEqupBow_Click);
             // 
             // pictureEqupMace
             // 
@@ -225,6 +226,7 @@
             this.pictureEqupMace.TabIndex = 11;
             this.pictureEqupMace.TabStop = false;
             this.pictureEqupMace.Visible = false;
+            this.pictureEqupMace.Click += new System.EventHandler(this.pictureEqupMace_Click);
             // 
             // pictureExupBP
             // 
@@ -237,6 +239,7 @@
             this.pictureExupBP.TabIndex = 12;
             this.pictureExupBP.TabStop = false;
             this.pictureExupBP.Visible = false;
+            this.pictureExupBP.Click += new System.EventHandler(this.pictureExupBP_Click);
             // 
             // pictureExupRP
             // 
@@ -249,6 +252,7 @@
             this.pictureExupRP.TabIndex = 13;
             this.pictureExupRP.TabStop = false;
             this.pictureExupRP.Visible = false;
+            this.pictureExupRP.Click += new System.EventHandler(this.pictureExupRP_Click);
             // 
             // tableStatistic
             // 
@@ -355,15 +359,16 @@
             this.labelPlayer.TabIndex = 0;
             this.labelPlayer.Text = "Gracz";
             // 
-            // buttonUp
+            // buttonMoveUp
             // 
-            this.buttonUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUp.Location = new System.Drawing.Point(44, 20);
-            this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(35, 28);
-            this.buttonUp.TabIndex = 0;
-            this.buttonUp.Text = "↑";
-            this.buttonUp.UseVisualStyleBackColor = true;
+            this.buttonMoveUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonMoveUp.Location = new System.Drawing.Point(44, 20);
+            this.buttonMoveUp.Name = "buttonMoveUp";
+            this.buttonMoveUp.Size = new System.Drawing.Size(35, 28);
+            this.buttonMoveUp.TabIndex = 0;
+            this.buttonMoveUp.Text = "↑";
+            this.buttonMoveUp.UseVisualStyleBackColor = true;
+            this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
             // 
             // tableMove
             // 
@@ -372,10 +377,10 @@
             this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableMove.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableMove.Controls.Add(this.buttonDown, 1, 2);
-            this.tableMove.Controls.Add(this.buttonUp, 1, 1);
-            this.tableMove.Controls.Add(this.buttonLeft, 0, 2);
-            this.tableMove.Controls.Add(this.buttonRight, 2, 2);
+            this.tableMove.Controls.Add(this.buttonMoveDown, 1, 2);
+            this.tableMove.Controls.Add(this.buttonMoveUp, 1, 1);
+            this.tableMove.Controls.Add(this.buttonMoveLeft, 0, 2);
+            this.tableMove.Controls.Add(this.buttonMoveRight, 2, 2);
             this.tableMove.Controls.Add(this.labelMove, 0, 0);
             this.tableMove.Location = new System.Drawing.Point(381, 353);
             this.tableMove.Name = "tableMove";
@@ -386,35 +391,38 @@
             this.tableMove.Size = new System.Drawing.Size(124, 86);
             this.tableMove.TabIndex = 17;
             // 
-            // buttonDown
+            // buttonMoveDown
             // 
-            this.buttonDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonDown.Location = new System.Drawing.Point(44, 54);
-            this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(35, 29);
-            this.buttonDown.TabIndex = 2;
-            this.buttonDown.Text = "↓";
-            this.buttonDown.UseVisualStyleBackColor = true;
+            this.buttonMoveDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonMoveDown.Location = new System.Drawing.Point(44, 54);
+            this.buttonMoveDown.Name = "buttonMoveDown";
+            this.buttonMoveDown.Size = new System.Drawing.Size(35, 29);
+            this.buttonMoveDown.TabIndex = 2;
+            this.buttonMoveDown.Text = "↓";
+            this.buttonMoveDown.UseVisualStyleBackColor = true;
+            this.buttonMoveDown.Click += new System.EventHandler(this.buttonMoveDown_Click);
             // 
-            // buttonLeft
+            // buttonMoveLeft
             // 
-            this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonLeft.Location = new System.Drawing.Point(3, 54);
-            this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(35, 29);
-            this.buttonLeft.TabIndex = 1;
-            this.buttonLeft.Text = "←";
-            this.buttonLeft.UseVisualStyleBackColor = true;
+            this.buttonMoveLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonMoveLeft.Location = new System.Drawing.Point(3, 54);
+            this.buttonMoveLeft.Name = "buttonMoveLeft";
+            this.buttonMoveLeft.Size = new System.Drawing.Size(35, 29);
+            this.buttonMoveLeft.TabIndex = 1;
+            this.buttonMoveLeft.Text = "←";
+            this.buttonMoveLeft.UseVisualStyleBackColor = true;
+            this.buttonMoveLeft.Click += new System.EventHandler(this.buttonMoveLeft_Click);
             // 
-            // buttonRight
+            // buttonMoveRight
             // 
-            this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonRight.Location = new System.Drawing.Point(85, 54);
-            this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(36, 29);
-            this.buttonRight.TabIndex = 3;
-            this.buttonRight.Text = "→";
-            this.buttonRight.UseVisualStyleBackColor = true;
+            this.buttonMoveRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonMoveRight.Location = new System.Drawing.Point(85, 54);
+            this.buttonMoveRight.Name = "buttonMoveRight";
+            this.buttonMoveRight.Size = new System.Drawing.Size(36, 29);
+            this.buttonMoveRight.TabIndex = 3;
+            this.buttonMoveRight.Text = "→";
+            this.buttonMoveRight.UseVisualStyleBackColor = true;
+            this.buttonMoveRight.Click += new System.EventHandler(this.buttonMoveRight_Click);
             // 
             // labelMove
             // 
@@ -434,10 +442,10 @@
             this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableAttack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableAttack.Controls.Add(this.button9, 1, 2);
-            this.tableAttack.Controls.Add(this.button10, 1, 1);
-            this.tableAttack.Controls.Add(this.button11, 0, 2);
-            this.tableAttack.Controls.Add(this.button12, 2, 2);
+            this.tableAttack.Controls.Add(this.buttonAttackDown, 1, 2);
+            this.tableAttack.Controls.Add(this.buttonAttackUp, 1, 1);
+            this.tableAttack.Controls.Add(this.buttonAttackLeft, 0, 2);
+            this.tableAttack.Controls.Add(this.buttonAttackRight, 2, 2);
             this.tableAttack.Controls.Add(this.labelAttack, 0, 0);
             this.tableAttack.Location = new System.Drawing.Point(529, 353);
             this.tableAttack.Name = "tableAttack";
@@ -448,45 +456,49 @@
             this.tableAttack.Size = new System.Drawing.Size(124, 86);
             this.tableAttack.TabIndex = 18;
             // 
-            // button9
+            // buttonAttackDown
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button9.Location = new System.Drawing.Point(44, 54);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 29);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "↓";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonAttackDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAttackDown.Location = new System.Drawing.Point(44, 54);
+            this.buttonAttackDown.Name = "buttonAttackDown";
+            this.buttonAttackDown.Size = new System.Drawing.Size(35, 29);
+            this.buttonAttackDown.TabIndex = 2;
+            this.buttonAttackDown.Text = "↓";
+            this.buttonAttackDown.UseVisualStyleBackColor = true;
+            this.buttonAttackDown.Click += new System.EventHandler(this.buttonAttackDown_Click);
             // 
-            // button10
+            // buttonAttackUp
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button10.Location = new System.Drawing.Point(44, 20);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(35, 28);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "↑";
-            this.button10.UseVisualStyleBackColor = true;
+            this.buttonAttackUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAttackUp.Location = new System.Drawing.Point(44, 20);
+            this.buttonAttackUp.Name = "buttonAttackUp";
+            this.buttonAttackUp.Size = new System.Drawing.Size(35, 28);
+            this.buttonAttackUp.TabIndex = 0;
+            this.buttonAttackUp.Text = "↑";
+            this.buttonAttackUp.UseVisualStyleBackColor = true;
+            this.buttonAttackUp.Click += new System.EventHandler(this.buttonAttackUp_Click);
             // 
-            // button11
+            // buttonAttackLeft
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button11.Location = new System.Drawing.Point(3, 54);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(35, 29);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "←";
-            this.button11.UseVisualStyleBackColor = true;
+            this.buttonAttackLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAttackLeft.Location = new System.Drawing.Point(3, 54);
+            this.buttonAttackLeft.Name = "buttonAttackLeft";
+            this.buttonAttackLeft.Size = new System.Drawing.Size(35, 29);
+            this.buttonAttackLeft.TabIndex = 1;
+            this.buttonAttackLeft.Text = "←";
+            this.buttonAttackLeft.UseVisualStyleBackColor = true;
+            this.buttonAttackLeft.Click += new System.EventHandler(this.buttonAttackLeft_Click);
             // 
-            // button12
+            // buttonAttackRight
             // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button12.Location = new System.Drawing.Point(85, 54);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(36, 29);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "→";
-            this.button12.UseVisualStyleBackColor = true;
+            this.buttonAttackRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAttackRight.Location = new System.Drawing.Point(85, 54);
+            this.buttonAttackRight.Name = "buttonAttackRight";
+            this.buttonAttackRight.Size = new System.Drawing.Size(36, 29);
+            this.buttonAttackRight.TabIndex = 3;
+            this.buttonAttackRight.Text = "→";
+            this.buttonAttackRight.UseVisualStyleBackColor = true;
+            this.buttonAttackRight.Click += new System.EventHandler(this.buttonAttackRight_Click);
             // 
             // labelAttack
             // 
@@ -526,6 +538,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGhost)).EndInit();
@@ -575,17 +588,17 @@
         private System.Windows.Forms.Label labelBat;
         private System.Windows.Forms.Label playerHitPoints;
         private System.Windows.Forms.Label labelPlayer;
-        private System.Windows.Forms.Button buttonUp;
+        private System.Windows.Forms.Button buttonMoveUp;
         private System.Windows.Forms.TableLayoutPanel tableMove;
-        private System.Windows.Forms.Button buttonDown;
-        private System.Windows.Forms.Button buttonLeft;
-        private System.Windows.Forms.Button buttonRight;
+        private System.Windows.Forms.Button buttonMoveDown;
+        private System.Windows.Forms.Button buttonMoveLeft;
+        private System.Windows.Forms.Button buttonMoveRight;
         private System.Windows.Forms.Label labelMove;
         private System.Windows.Forms.TableLayoutPanel tableAttack;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button buttonAttackDown;
+        private System.Windows.Forms.Button buttonAttackUp;
+        private System.Windows.Forms.Button buttonAttackLeft;
+        private System.Windows.Forms.Button buttonAttackRight;
         private System.Windows.Forms.Label labelAttack;
     }
 }

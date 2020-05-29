@@ -50,10 +50,11 @@ namespace TheExpedition2
         {
             base.location = Move(direction, game.Boundaries);
             if (!game.WeaponInRoom.PickedUp)
-                if (Nearby(game.WeaponInRoom.Location, 1))
+                if (Nearby(game.WeaponInRoom.Location, 2))
                 {
                     inventory.Add(game.WeaponInRoom);
-                    Equip(game.WeaponInRoom.Name);
+                    game.WeaponInRoom.PickUpWeapon();
+                   // Equip(game.WeaponInRoom.Name);
                 }
         }
 
@@ -68,7 +69,7 @@ namespace TheExpedition2
                 equippedWeapon = null;
             }
             else
-                equippedWeapon.Attack();
+                equippedWeapon.Attack(direction, random);
                
         }
     }

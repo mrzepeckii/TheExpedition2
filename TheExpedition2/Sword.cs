@@ -19,24 +19,24 @@ namespace TheExpedition2
             switch (direction)
             {
                 case Direction.Up:
-                    if (!DamageEnemy(direction, 10, 3, random))
-                        if (!DamageEnemy(Direction.Right, 10, 3, random))
-                            DamageEnemy(Direction.Left, 10, 3, random);
+                    if (!DamageEnemy(direction, 25, 3, random))
+                        if (!DamageEnemy(Direction.Right, 25, 3, random))
+                            DamageEnemy(Direction.Left, 25, 3, random);
                     break;
                 case Direction.Down:
-                    if (!DamageEnemy(direction, 10, 3, random))
-                        if (!DamageEnemy(Direction.Left, 10, 3, random))
-                            DamageEnemy(Direction.Right, 10, 3, random);
+                    if (!DamageEnemy(direction, 25, 3, random))
+                        if (!DamageEnemy(Direction.Left, 25, 3, random))
+                            DamageEnemy(Direction.Right, 25, 3, random);
                     break;
                 case Direction.Left:
-                    if (!DamageEnemy(direction, 10, 3, random))
-                        if (!DamageEnemy(Direction.Up, 10, 3, random))
-                            DamageEnemy(Direction.Down, 10, 3, random);
+                    if (!DamageEnemy(direction, 25, 3, random))
+                        if (!DamageEnemy(Direction.Up, 25, 3, random))
+                            DamageEnemy(Direction.Down, 13, 3, random);
                     break;
                 case Direction.Right:
-                    if (!DamageEnemy(direction, 10, 3, random))
-                        if (!DamageEnemy(Direction.Down, 10, 3, random))
-                            DamageEnemy(Direction.Up, 10, 3, random);
+                    if (!DamageEnemy(direction, 25, 3, random))
+                        if (!DamageEnemy(Direction.Down, 25, 3, random))
+                            DamageEnemy(Direction.Up, 25, 3, random);
                     break;
                 default:
                     break;

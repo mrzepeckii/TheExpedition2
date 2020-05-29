@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TheExpedition2
 {
@@ -14,13 +15,14 @@ namespace TheExpedition2
 
         public override void Move(Random random)
         {
-            while (!Dead)
+            if (!Dead)
             {
-                int myRandom = random.Next(1);
-                if (myRandom == 0)
-                    Move((Direction)random.Next(3), game.Boundaries);
+                int myRandom = random.Next(2);
+                if (myRandom == 1)
+                    location = Move((Direction)random.Next(3), game.Boundaries);
                 else
-                    Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
+                    location = Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
+                  
                 if (NearPlayer())
                     game.HitPlayer(2, random);
             }

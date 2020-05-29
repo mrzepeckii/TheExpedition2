@@ -91,9 +91,9 @@ namespace TheExpedition2
                     Enemies.Clear();
                     Enemies.Add(new Ghost(this, GetRandomLocation(random)));
                     Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    if (!CheckPlayerInventory(Bow.Name))
+                    if (!CheckPlayerInventory("Bow"))
                         WeaponInRoom = new Bow(this, GetRandomLocation(random));
-                    else if(!CheckPlayerInventory(BluePotion.Name))
+                    else if(!CheckPlayerInventory("BluePotion"))
                         WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
                     break;
                 case 5:
@@ -113,9 +113,9 @@ namespace TheExpedition2
                     Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
                     Enemies.Add(new Ghost(this, GetRandomLocation(random)));
                     Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    if (!CheckPlayerInventory(Mace.Name))
+                    if (!CheckPlayerInventory("Mace"))
                         WeaponInRoom = new Mace(this, GetRandomLocation(random));
-                    else if (!CheckPlayerInventory(RedPotion.Name))
+                    else if (!CheckPlayerInventory("RedPotion"))
                         WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
                     break;
                 default:
