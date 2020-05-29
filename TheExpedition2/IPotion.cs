@@ -8,5 +8,6 @@ namespace TheExpedition2
 {
     interface IPotion
     {
+        bool Used { get; }
     }
 }
