@@ -79,7 +79,7 @@ namespace TheExpedition2
                 }
                 if (enemy is Ghoul)
                 {
-                    pictureGhost.Location = enemy.Location;
+                    pictureGhul.Location = enemy.Location;
                     ghoulHitPoints.Visible = true;
                     pictureGhul.Visible = true;
                     ghoulHitPoints.Text = enemy.HitPoints.ToString();

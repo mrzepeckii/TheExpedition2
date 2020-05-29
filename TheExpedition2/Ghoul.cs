@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TheExpedition2
 {
@@ -17,7 +18,7 @@ namespace TheExpedition2
             if (!Dead)
             {
                 int myRandom = random.Next(3);
-                if (myRandom != 0)
+                if (myRandom != 1)
                     location = Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
                 if (NearPlayer())
                     game.HitPlayer(4, random);
