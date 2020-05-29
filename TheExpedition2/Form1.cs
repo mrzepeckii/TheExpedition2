@@ -140,8 +140,18 @@ namespace TheExpedition2
                 weaponControl.Visible = true;
             if (game.PlayerHitPoints <= 0)
             {
-                MessageBox.Show("You are dead!");
-                Application.Exit();
+                MessageBox.Show("You are dead! Do you want to repat " + game.Level +" level?", "End game", MessageBoxButtons.YesNo);
+                if (DialogResult == DialogResult.No)
+                    Application.Exit();
+                else
+                {
+                    game.WantToRepeat = true;
+                    game.IncreasePlayerHealth(10, random);
+                    //game = new Game(new Rectangle(78, 57, 402, 155));
+                    game.NewLevel(random);
+                    UpdateCharacters();
+                }
+                    
             }
             if (enemiesShown < 1)
             {

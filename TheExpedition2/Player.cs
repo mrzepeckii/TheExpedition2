@@ -54,7 +54,6 @@ namespace TheExpedition2
                 {
                     inventory.Add(game.WeaponInRoom);
                     game.WeaponInRoom.PickUpWeapon();
-                   // Equip(game.WeaponInRoom.Name);
                 }
         }
 
