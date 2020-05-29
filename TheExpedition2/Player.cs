@@ -53,6 +53,7 @@ namespace TheExpedition2
                 if (Nearby(game.WeaponInRoom.Location, 1))
                 {
                     inventory.Add(game.WeaponInRoom);
+                    game.WeaponInRoom.PickUpWeapon();
                     Equip(game.WeaponInRoom.Name);
                 }
         }

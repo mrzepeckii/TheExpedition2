@@ -47,12 +47,17 @@ namespace TheExpedition2
             bool showGhost = false;
             bool showGhoul = false;
             int enemiesShown = 0;
+            batHitPoints.Visible = false;
+            ghostHitPoints.Visible = false;
+            ghoulHitPoints.Visible = false;
 
             foreach (Enemy enemy in game.Enemies)
             {
                 if (enemy is Bat)
                 {
                     pictureBat.Location = enemy.Location;
+                    batHitPoints.Visible = true;
+                    pictureBat.Visible = true;
                     batHitPoints.Text = enemy.HitPoints.ToString();
                     if (!enemy.Dead)
                     {
@@ -63,6 +68,8 @@ namespace TheExpedition2
                 if (enemy is Ghost)
                 {
                     pictureGhost.Location = enemy.Location;
+                    ghostHitPoints.Visible = true;
+                    pictureGhost.Visible = true;
                     ghostHitPoints.Text = enemy.HitPoints.ToString();
                     if (!enemy.Dead)
                     {
@@ -73,6 +80,8 @@ namespace TheExpedition2
                 if (enemy is Ghoul)
                 {
                     pictureGhost.Location = enemy.Location;
+                    ghoulHitPoints.Visible = true;
+                    pictureGhul.Visible = true;
                     ghoulHitPoints.Text = enemy.HitPoints.ToString();
                     if (!enemy.Dead)
                     {
@@ -134,7 +143,7 @@ namespace TheExpedition2
                 MessageBox.Show("You are dead!");
                 Application.Exit();
             }
-            if(enemiesShown < 1)
+            if (enemiesShown < 1)
             {
                 MessageBox.Show("Go to next level!");
                 game.NewLevel(random);

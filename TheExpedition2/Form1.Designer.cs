@@ -92,7 +92,6 @@
             this.picturePlayer.Size = new System.Drawing.Size(39, 38);
             this.picturePlayer.TabIndex = 0;
             this.picturePlayer.TabStop = false;
-            this.picturePlayer.Visible = false;
             // 
             // pictureBat
             // 

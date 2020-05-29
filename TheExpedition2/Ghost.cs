@@ -14,11 +14,11 @@ namespace TheExpedition2
 
         public override void Move(Random random)
         {
-            while (!Dead)
+            if (!Dead)
             {
-                int myRandom = random.Next(2);
-                if (myRandom == 0)
-                    Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
+                int myRandom = random.Next(3);
+                if (myRandom == 1)
+                    location = Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
                 if (NearPlayer())
                     game.HitPlayer(3, random);
             }
