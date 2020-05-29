@@ -29,12 +29,13 @@ namespace TheExpedition2
                 {
                     if (Nearby(enemy.Location, target, distance))
                     {
-                        enemy.Hit(damage, random)
-                            return true;
+                        enemy.Hit(damage, random);
+                        return true;
                     }
                 }
                 target = Move(direction, target, game.Boundaries);
             }
             return false;
+        }
     }
 }
