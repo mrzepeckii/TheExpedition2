@@ -29,6 +29,19 @@ namespace TheExpedition2
                 return false;
         }
 
+        public bool Nearby(Point target1, Point target2, int distance)
+        {
+            Point tempLocation = location;
+            location = target1;
+            if (Nearby(target2, distance))
+            {
+                location = tempLocation;
+                return true;
+            }
+            location = tempLocation;
+            return false;    
+        }
+
         public Point Move(Direction direction, Rectangle boundaries)
         {
             Point newLocation = location;
@@ -54,6 +67,15 @@ namespace TheExpedition2
                     break;
             }
             return newLocation;
+        }
+
+        public Point Move(Direction direction, Point target, Rectangle boundaries)
+        {
+            Point tempLocation = location;
+            location = target;
+            Point outputLocation = Move(direction, boundaries);
+            location = tempLocation;
+            return outputLocation;
         }
     }
 }
