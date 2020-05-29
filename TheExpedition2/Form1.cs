@@ -38,6 +38,110 @@ namespace TheExpedition2
             UpdateCharacters();
         }
 
+        private void UpdateCharacters()
+        {
+            picturePlayer.Location = game.PlayerLocation;
+            playerHitPoints.Text = game.PlayerHitPoints.ToString();
+
+            bool showBat = false;
+            bool showGhost = false;
+            bool showGhoul = false;
+            int enemiesShown = 0;
+
+            foreach (Enemy enemy in game.Enemies)
+            {
+                if (enemy is Bat)
+                {
+                    pictureBat.Location = enemy.Location;
+                    batHitPoints.Text = enemy.HitPoints.ToString();
+                    if (!enemy.Dead)
+                    {
+                        showBat = true;
+                        enemiesShown++;
+                    }
+                }
+                if (enemy is Ghost)
+                {
+                    pictureGhost.Location = enemy.Location;
+                    ghostHitPoints.Text = enemy.HitPoints.ToString();
+                    if (!enemy.Dead)
+                    {
+                        showGhost = true;
+                        enemiesShown++;
+                    }
+                }
+                if (enemy is Ghoul)
+                {
+                    pictureGhost.Location = enemy.Location;
+                    ghoulHitPoints.Text = enemy.HitPoints.ToString();
+                    if (!enemy.Dead)
+                    {
+                        showGhoul = true;
+                        enemiesShown++;
+                    }
+                }
+            }
+            if (showBat == false)
+                pictureBat.Visible = false;
+            if (showGhost == false)
+                pictureGhost.Visible = false;
+            if (showGhoul == false)
+                pictureGhul.Visible = false;
+
+            pictureSword.Visible = false;
+            pictureBow.Visible = false;
+            pictureMace.Visible = false;
+            pictureRedPot.Visible = false;
+            pictureBluePot.Visible = false;
+
+            Control weaponControl = null;
+            switch (game.WeaponInRoom.Name)
+            {
+                case "Sword":
+                    weaponControl = pictureSword;
+                    break;
+                case "Bow":
+                    weaponControl = pictureBow;
+                    break;
+                case "Mace":
+                    weaponControl = pictureMace;
+                    break;
+                case "RedPotion":
+                    weaponControl = pictureRedPot;
+                    break;
+                case "BluePotion":
+                    weaponControl = pictureBluePot;
+                    break;
+                default:
+                    break;
+            }
+            weaponControl.Visible = true;
+            foreach (string weaponInEquip in weaponPicture.Keys)
+            {
+                if (game.CheckPlayerInventory(weaponInEquip))
+                    weaponPicture[weaponInEquip].Visible = true;
+                else
+                    weaponPicture[weaponInEquip].Visible = false;
+            }
+
+            weaponControl.Location = game.WeaponInRoom.Location;
+            if (game.WeaponInRoom.PickedUp)
+                weaponControl.Visible = false;
+            else
+                weaponControl.Visible = true;
+            if (game.PlayerHitPoints <= 0)
+            {
+                MessageBox.Show("You are dead!");
+                Application.Exit();
+            }
+            if(enemiesShown < 1)
+            {
+                MessageBox.Show("Go to next level!");
+                game.NewLevel(random);
+                UpdateCharacters();
+            }
+        }
+
         private void UpdateWeaponBorder(string weapon)
         {
             foreach (string weaponInEquip in weaponPicture.Keys)
