@@ -140,15 +140,37 @@ namespace TheExpedition2
                 weaponControl.Visible = true;
             if (game.PlayerHitPoints <= 0)
             {
-                MessageBox.Show("You are dead!");
-                Application.Exit();
+                DialogResult result = MessageBox.Show("You are dead! Do you want to repat " + game.Level + " level?", "End game", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                    Application.Exit();
+                else
+                {
+                    game.WantToRepeat = true;
+                    game.IncreasePlayerHealth(10, random);
+                    game.NewLevel(random);
+                    UpdateCharacters();
+                }
+                    
             }
-            if (enemiesShown < 1)
+            if (enemiesShown < 1 && game.Level != 8)
             {
                 MessageBox.Show("Go to next level!");
                 game.NewLevel(random);
                 UpdateCharacters();
             }
+            else if(game.Level == 8)
+            {
+                DialogResult result = MessageBox.Show("Congrats - you win! Do you want to repat all levels?", "End game", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                    Application.Exit();
+                else
+                {
+                    game = new Game(new Rectangle(78, 57, 402, 155));
+                    game.NewLevel(random);
+                    UpdateCharacters();
+                }
+            }
+                
         }
 
         private void UpdateWeaponBorder(string weapon)

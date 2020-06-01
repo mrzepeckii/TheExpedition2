@@ -17,6 +17,7 @@ namespace TheExpedition2
         public int PlayerHitPoints { get { return player.HitPoints; } }
         public IEnumerable<string> PlayerWeapons { get { return player.Weapons; } }
         private int level = 0;
+        public bool WantToRepeat = false;
         public int Level { get { return level; } }
         private Rectangle boundaries;
         public Rectangle Boundaries { get { return boundaries; } }
@@ -33,6 +34,7 @@ namespace TheExpedition2
             foreach (Enemy enemy in Enemies)
                 enemy.Move(random);
         }
+
 
         public void Equip(string weaponName)
         {
@@ -69,23 +71,28 @@ namespace TheExpedition2
 
         public void NewLevel(Random random)
         {
-            level++;
+            if (!WantToRepeat)
+                level++;
+            WantToRepeat = false;
             switch (level)
             {
                 case 1:
                     Enemies = new List<Enemy>();
                     Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    WeaponInRoom = new Sword(this, GetRandomLocation(random));
+                    if (!CheckPlayerInventory("Sword"))
+                        WeaponInRoom = new Sword(this, GetRandomLocation(random));
                     break;
                 case 2:
                     Enemies.Clear();
                     Enemies.Add(new Ghost(this, GetRandomLocation(random)));
-                    WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
+                    if (!CheckPlayerInventory("BluePotion"))
+                        WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
                     break;
                 case 3:
                     Enemies.Clear();
                     Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
-                    WeaponInRoom = new Bow(this, GetRandomLocation(random));
+                    if (!CheckPlayerInventory("Bow"))
+                        WeaponInRoom = new Bow(this, GetRandomLocation(random));
                     break;
                 case 4:
                     Enemies.Clear();
@@ -100,13 +107,15 @@ namespace TheExpedition2
                     Enemies.Clear();
                     Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
                     Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
+                    if (!CheckPlayerInventory("RedPotion"))
+                        WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
                     break;
                 case 6:
                     Enemies.Clear();
                     Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
                     Enemies.Add(new Ghost(this, GetRandomLocation(random)));
-                    WeaponInRoom = new Mace(this, GetRandomLocation(random));
+                    if (!CheckPlayerInventory("Mace"))
+                        WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     break;
                 case 7:
                     Enemies.Clear();
@@ -117,6 +126,8 @@ namespace TheExpedition2
                         WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     else if (!CheckPlayerInventory("RedPotion"))
                         WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
+                    break;
+                case 8:
                     break;
                 default:
                     Application.Exit();
